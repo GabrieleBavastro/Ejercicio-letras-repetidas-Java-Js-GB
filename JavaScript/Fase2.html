@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display your Full Name.</p>
+
+<button onclick="myFunction()">Click!</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    let vowels = "vowel.";
+	let consonants = "consonant.";
+    let numbers = "people names do not contain numbers.";
+    let space = "empty space.";
+    let fullName = "BAVASTRO GABRIELE NAVONE 1984";
+    let fullNameArray = [];
+    let newFullNameArray = [];
+    fullNameArray = Array.from(fullName);
+    for (i=0; i<(fullNameArray.length);i++){ 
+        if (fullNameArray[i] === 'A'|| fullNameArray[i] === 'E' || fullNameArray[i] === 'I' 
+        || fullNameArray[i] === 'O' || fullNameArray[i] === 'U' || fullNameArray[i] === 'Y')
+         {newFullNameArray.push(vowels);}
+         else if (fullNameArray[i] === '1' || fullNameArray[i] === '2'|| fullNameArray[i] === '3' 
+         || fullNameArray[i] === '4' ||fullNameArray[i] === '5' || fullNameArray[i] === '6' 
+         || fullNameArray[i] === '7' || fullNameArray[i] === '8' || fullNameArray[i] === '9' 
+         || fullNameArray[i] === '0') {newFullNameArray.push(numbers);}
+         else if (fullNameArray[i] === ' ') {newFullNameArray.push(space);}
+         else {newFullNameArray.push(consonants);}
+    }
+    for (i=0; i<(newFullNameArray.length);i++) 
+    {document.writeln(newFullNameArray[i]+ "<br>")};
+}
+</script>
+</body>
+</html>
