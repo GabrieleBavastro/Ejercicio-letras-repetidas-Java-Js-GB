@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript letters on names calculator.</h2>
+<p id="demo"></p>
+<script>
+    function lettersMap(letter, count) {
+        this.letter = letter;
+        this.count = count};
+        let letterA = new lettersMap("A", 0);
+        let letterB = new lettersMap("B", 0);
+        let letterC = new lettersMap("C", 0);
+        let letterD = new lettersMap("D", 0);
+        let letterE = new lettersMap("E", 0);
+        let letterF = new lettersMap("F", 0);
+        let letterG = new lettersMap("G", 0);
+        let letterH = new lettersMap("H", 0);
+        let letterI = new lettersMap("I", 0);
+        let letterJ = new lettersMap("J", 0);
+        let letterK = new lettersMap("K", 0);
+        let letterL = new lettersMap("L", 0);
+        let letterM = new lettersMap("M", 0);
+        let letterN = new lettersMap("N", 0);
+        let letterO = new lettersMap("O", 0);
+        let letterP = new lettersMap("P", 0);
+        let letterQ = new lettersMap("Q", 0);
+        let letterR = new lettersMap("R", 0);
+        let letterS = new lettersMap("S", 0);
+        let letterT = new lettersMap("T", 0);
+        let letterU = new lettersMap("U", 0);
+        let letterV = new lettersMap("V", 0);
+        let letterX = new lettersMap("X", 0);
+        let letterY = new lettersMap("Y", 0);
+        let letterZ = new lettersMap("Z", 0);
+        let fullName = "BAVASTRO GABRIELE NAVONE";
+        let fullNameArray = [];
+        let newFullNameArray = [];
+        fullNameArray = Array.from(fullName);
+        for (i=0; i<(fullNameArray.length);i++){
+            if (fullNameArray[i] === 'A') {letterA.count = (letterA.count + 1);}
+            else if (fullNameArray[i] === 'B') {letterB.count = (letterB.count + 1);}
+            else if (fullNameArray[i] === 'C') {letterC.count = (letterC.count + 1);}
+            else if (fullNameArray[i] === 'D') {letterD.count = (letterD.count + 1);}
+            else if (fullNameArray[i] === 'E') {letterE.count = (letterE.count + 1);}
+            else if (fullNameArray[i] === 'F') {letterF.count = (letterF.count + 1);}
+            else if (fullNameArray[i] === 'G') {letterG.count = (letterG.count + 1);}
+            else if (fullNameArray[i] === 'H') {letterH.count = (letterH.count + 1);}
+            else if (fullNameArray[i] === 'I') {letterI.count = (letterI.count + 1);}
+            else if (fullNameArray[i] === 'J') {letterJ.count = (letterJ.count + 1);}
+            else if (fullNameArray[i] === 'K') {letterK.count = (letterK.count + 1);}
+            else if (fullNameArray[i] === 'L') {letterL.count = (letterL.count + 1);}
+            else if (fullNameArray[i] === 'M') {letterM.count = (letterM.count + 1);}
+            else if (fullNameArray[i] === 'N') {letterN.count = (letterN.count + 1);}
+            else if (fullNameArray[i] === 'O') {letterO.count = (letterO.count + 1);}
+            else if (fullNameArray[i] === 'P') {letterP.count = (letterP.count + 1);}
+            else if (fullNameArray[i] === 'R') {letterR.count = (letterR.count + 1);}
+            else if (fullNameArray[i] === 'S') {letterS.count = (letterS.count + 1);}
+            else if (fullNameArray[i] === 'T') {letterT.count = (letterT.count + 1);}
+            else if (fullNameArray[i] === 'U') {letterU.count = (letterU.count + 1);}
+            else if (fullNameArray[i] === 'V') {letterV.count = (letterV.count + 1);}
+            else if (fullNameArray[i] === 'X') {letterX.count = (letterX.count + 1);}
+            else if (fullNameArray[i] === 'Y') {letterY.count = (letterY.count + 1);}
+            else if (fullNameArray[i] === 'Z') {letterZ.count = (letterZ.count + 1);}
+        }
+{document.write("Your full name is " + fullName + " and:" + "<br>");
+document.write("Letter : " + letterA.letter + " appear " + letterA.count + " times." + "<br>");
+document.write("Letter : " + letterB.letter + " appear " + letterB.count + " times." + "<br>");
+document.write("Letter : " + letterC.letter + " appear " + letterC.count + " times." + "<br>");
+document.write("Letter : " + letterD.letter + " appear " + letterD.count + " times." + "<br>");
+document.write("Letter : " + letterE.letter + " appear " + letterE.count + " times." + "<br>");
+document.write("Letter : " + letterF.letter + " appear " + letterF.count + " times." + "<br>");
+document.write("Letter : " + letterG.letter + " appear " + letterG.count + " times." + "<br>");
+document.write("Letter : " + letterH.letter + " appear " + letterH.count + " times." + "<br>");
+document.write("Letter : " + letterI.letter + " appear " + letterI.count + " times." + "<br>");
+document.write("Letter : " + letterJ.letter + " appear " + letterJ.count + " times." + "<br>");
+document.write("Letter : " + letterK.letter + " appear " + letterK.count + " times." + "<br>");
+document.write("Letter : " + letterL.letter + " appear " + letterL.count + " times." + "<br>");
+document.write("Letter : " + letterM.letter + " appear " + letterM.count + " times." + "<br>");
+document.write("Letter : " + letterN.letter + " appear " + letterN.count + " times." + "<br>");
+document.write("Letter : " + letterO.letter + " appear " + letterO.count + " times." + "<br>");
+document.write("Letter : " + letterP.letter + " appear " + letterP.count + " times." + "<br>");
+document.write("Letter : " + letterQ.letter + " appear " + letterQ.count + " times." + "<br>");
+document.write("Letter : " + letterR.letter + " appear " + letterR.count + " times." + "<br>");
+document.write("Letter : " + letterS.letter + " appear " + letterS.count + " times." + "<br>");
+document.write("Letter : " + letterT.letter + " appear " + letterT.count + " times." + "<br>");
+document.write("Letter : " + letterU.letter + " appear " + letterU.count + " times." + "<br>");
+document.write("Letter : " + letterV.letter + " appear " + letterV.count + " times." + "<br>");
+document.write("Letter : " + letterX.letter + " appear " + letterX.count + " times." + "<br>");
+document.write("Letter : " + letterY.letter + " appear " + letterY.count + " times." + "<br>");
+document.write("Letter : " + letterZ.letter + " appear " + letterZ.count + " times." + "<br>");
+}
+</script>
+
+</body>
+</html>
