@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Full Name.</h2>
+<button onclick="myFunction()">Click!</button>
+<p>Click the button to display your Full Name.</p>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        let firstName = "GABRIELE";
+        let surname = "BAVASTRO NAVONE";
+        let emptySpace = " ";
+        let firstNameArray = [];
+        let surnameArray = [];
+        let fullnameArray = [];
+        firstNameArray = Array.from(firstName);
+        surnameArray = Array.from(surname);
+        fullNameArray = (firstNameArray + emptySpace + surnameArray);
+        document.write ("Your full name is: " + fullNameArray);
+}
+</script>
+
+</body>
+</html>
